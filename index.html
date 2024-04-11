@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE-edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Thiobista</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/899c0b637d.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+        
+            <div id="header"> 
+                
+    <div class="containerh">
+       <div class="nav">
+        <nav>
+           
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#qualification">Skills&Certifications</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+                <button id="night-mode-toggle">
+                    <i class="fas fa-moon"></i> 
+                </button>
+                <i class="fa-regular fa-circle-xmark"onclick="closemenu()"></i>
+            </ul>
+            <i id="menu" class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+    </div>
+         
+        
+     <div id="text" class="header-text">
+        <h1>Hello,I am <span><i>Thiobista</i></span><br><div id="headers"></div></h1><!--to display characters one by one-->
+       
+    </div>
+
+   
+    </div>
+   
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="ppl.png"alt="bi">
+              </div>
+             
+          <div class="about-col-2">
+            <h1 class="sub-title">Basic Detail</h1>
+       
+  <p id="text" class="pbio">
+    I have a deep-rooted interest in 
+    technology and programming. I have always been fascinated by the way websites and applications 
+    are created and also eager to learn the ins and outs of full stack development. With a solid foundation 
+    in HTML, CSS, and JavaScript, I am confident in my ability to grasp new concepts and 
+    technologies quickly. My career plans involve working as a full stack developer,
+     where I can use my skills to create innovative and user-friendly websites and applications. 
+     Ultimately, I dream of becoming a respected and sought-after developer in the industry, 
+     known for my expertise in full stack development.</p>
+
+     <div class="infome">
+        <div class="tab-titles">
+            <p class="tab-links active-link"onclick="opentab('Name')">Education </p>
+             <p class="tab-links"onclick="opentab('Address')">Address </p>
+          <p class="tab-links"onclick="opentab('birth')">Birth info</p>
+             
+            
+            </div>
+            <div class="tab-contents active-tab"id="Name">
+                <ul>
+                    <ul>- Bahirdar University</ul>
+                    <ul>- ALX Africa</ul>
+                    <ul>- FreeCodeCamp</ul>
+                </ul>
+                
+         </div>
+        <div class="tab-contents"id="Address">
+        <ul>
+        Ethiopia,Bahirdar
+        </ul>
+        </div>
+        
+        <div class="tab-contents "id="birth">
+        <ul>
+        Date- May 9 2003</br>
+        Place-Amhara region,North shewa
+        </ul>
+        </div>
+      
+        </div>
+
+        </div>  
+    </div>
+</div>
+</div>
+
+<div id="services">
+    <div class="container">
+<h1 class="sub-title">My Services</h1>
+<div class="services-lists">
+    <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p> Designing and creating visually appealing and </br>user-friendly websites using HTML, CSS, and JavaScript.</p>
+       
+    </div>
+     <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Responsive Design</h2>
+       <p>Ensuring that websites are optimized for various devices </br>and screen sizes, providing a seamless user experience.</p>
+      
+    </div>
+     <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Front-end Frameworks</h2>
+        <p>Utilizing popular front-end frameworks such as Bootstrap, React, or</br> Angular to build scalable and efficient web applications.</p>
+       
+    </div>
+
+</div>
+    </div>
+</div>
+
+<!---------------------skiill and certificate----------->
+<div id="qualification">
+    <div class="container">
+        <div class="row">
+           
+          <div class="about-col-2">
+            <h1 class="sub-title">Skills&Certifications</h1>
+            
+               <div class="tab-titles">
+               <p class="tab-links active-link"onclick="opentab('Skills')">Skills </p>
+                <p class="tab-links"onclick="opentab('Certifications')">Certifications </p>
+               </div>
+               <div class="tab-contents active-tab"id="Skills">
+                <section class="skills" id="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-container">
+                      <label for="html">HTML</label>
+                      <progress id="html" value="90" max="100">90%</progress>
+                    </div>
+                    <div class="skill-container">
+                      <label for="css">CSS</label>
+                      <progress id="css" value="80" max="100">80%</progress>
+                    </div>
+                    <div class="skill-container">
+                      <label for="js">JavaScript</label>
+                      <progress id="js" value="75" max="100">75%</progress>
+                    </div>
+                    <div class="skill-container">
+                        <label for="C++">C++</label>
+                        <progress id="C++" value="90" max="100">90%</progress>
+                      </div>
+                      <div class="skill-container">
+                        <label for="Java">Java</label>
+                        <progress id="Java" value="70" max="100">70%</progress>
+                      </div>
+                      <div class="skill-container">
+                        <label for="Bootstrap">Bootstrap</label>
+                        <progress id="Bootstrap" value="70" max="100">70%</progress>
+                      </div>
+                      <div class="skill-container">
+                        <label for="SQL">SQL</label>
+                        <progress id="SQL" value="70" max="100">70%</progress>
+                      </div>
+                  </section>
+            </div>
+<div class="tab-contents"id="Certifications">
+  <ul><li><h3 class="cert">Freecodecamp responsive web design certificate</h3> <a href="https://www.linkedin.com/posts/thiobistagedefaw_im-happy-to-share-that-ive-obtained-a-new-activity-7118963079073157120-IcvC?utm_source=share&utm_medium=member_desktop">click to see</a></li>
+   <li> <h3>Codsoft web development internship completion certificate</h3> <a href="https://www.linkedin.com/posts/thiobistagedefaw_codsoft-cip-webdevelopment-activity-7144648548901351425-9Isv?utm_source=share&utm_medium=member_desktop">click to see</a></li>
+</ul>
+</div>
+          </div>
+        </div>
+    </div>
+</div>
+<!---------------------portfolio----------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        
+        <div class="work-list">
+            <div class="work">
+                <img src="cons.jpg">
+                <div class="layer">
+                    <h3>Consultancy Website</h3>
+                   
+                    <button id="showButtoncons" onclick="hideButtoncons()">Click here to see description</button>
+                    <div id="hiddenContentcons" class="hidden">
+                        <p>A consultancy website created with HTML, CSS, and JavaScript combines structured 
+                            content, visually appealing design, and interactive features to showcase services
+                             effectively. It enhances user engagement, improves site functionality, and allows
+                              for seamless navigation, ultimately enhancing the overall user experience.</p>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="lnd.jpg">
+                <div class="layer">
+                   
+                    <h3>Landing Page</h3>
+                    <button id="showButtonlnd" onclick="hideButtonlnd()">Click here to see description</button>
+                    <div id="hiddenContentlnd" class="hidden">
+                        <p>It serves as a targeted page for marketing campaigns, aiming to convert visitors
+                             into leads or customers by prompting a specific action or response. The creation
+                              process involves coding the HTML layout, styling with CSS, and adding functionality
+                               with JavaScript</p>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="mag.jpg">
+                <div class="layer">
+                    <h3>Magazine</h3>
+                    <button id="showButtonmag" onclick="hideButtonmag()">Click here to see description</button>
+                    <div id="hiddenContentmag" class="hidden">
+                        <p>It is used to present articles and media in an engaging layout, accessible across
+                             various devices. The process involves coding in HTML, designing with CSS, and 
+                             enhancing functionality with JavaScript for a responsive, interactive reading 
+                             experience</p>
+                        </div>
+                </div>
+            </div> 
+        </div>
+  
+        <button id="showButton" onclick="hideButton()">See More....</button>
+<div id="hiddenContent" class="hidden">
+<div  class="work-list">
+    <div class="work">
+        <img src="nutr.jpg">
+        <div class="layer">
+           
+            <h3>Nutrition Label</h3>
+            <button id="showButtonnutr" onclick="hideButtonnutr()">Click here to see description</button>
+            <div id="hiddenContentnutr" class="hidden">
+                <p>It is used to provide detailed nutritional information to consumers, often 
+                    in an interactive format that allows for customization based on serving size.</p>
+                </div>
+        </div>
+    </div>
+    <div class="work">
+        <img src="cafe.jpg">
+        <div class="layer">
+            <h3>Cafe Menu</h3>
+            <button id="showButtoncafe" onclick="hideButtoncafe()">Click here to see description</button>
+            <div id="hiddenContentcafe" class="hidden">
+                <p> It is used to display food and drink options to customers online, allowing for
+                     easy updates and interactive features.</p>
+                </div>
+        </div>
+    </div> 
+    <div class="work">
+        <img src="cal.jpg">
+        <div class="layer">
+            <h3>Calculator</h3>
+            <button id="showButtoncal" onclick="hideButtoncal()">Click here to see description</button>
+                    <div id="hiddenContentcal" class="hidden">
+                        <p>A web-based calculator is built using HTML for the user interface, CSS for styling, and JavaScript
+                             for arithmetic operations and user interaction. It’s used for performing quick calculations
+                              online, offering convenience and accessibility without the need for a physical device</p>
+                        </div>
+        </div>
+    </div> 
+</div>
+</div>
+</div>
+    </div>
+
+<!------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i id="op" class="fa-solid fa-envelope"></i>thiobista0gedefaw@gmail.com</p>
+                <p><i id="op" class="fa-solid fa-phone"></i>+251960272771</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100094136316243&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/Thiobsta"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/thiobistagedefaw/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/thiobista?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="https://1drv.ms/b/s!AitkmNXfT1rqgU-yqng_t3jwvp1i"download="res.pdf" class="btn btn2" >Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text"name="Name"placeholder="Your Name" required>
+                    <input type="text"name="Email"placeholder="Your Email" required>
+                    <textarea name="Message"placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   <div class="copyright">
+   Copyright thiobista
+   </div>
+</div>
+<script>
+    const nightModeToggle = document.getElementById('night-mode-toggle');
+const body = document.body;
+
+nightModeToggle.addEventListener('click', () => {
+    body.classList.toggle('night-mode');
+    
+    const isNightMode = body.classList.contains('night-mode');
+    
+    if (isNightMode) {
+        nightModeToggle.innerHTML = '<i class="fas fa-sun"></i> ';
+    } else {
+        nightModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+});
+
+</script>
+<script>
+    document.getElementById('showButtonbio').addEventListener('click', function() {
+        document.getElementById('hiddenContentbio').style.display = 'block';
+    });
+
+    function hideButtonbio() {
+document.getElementById('showButtonbio').style.display = 'none';
+}
+    </script>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+<script>
+    const word = 'Software Engineering Student';
+    const characterContainer = document.getElementById('headers');
+    let index = 0;
+    
+    function displayNextCharacter() {
+        if (index < word.length) {
+            const character = document.createElement('span');
+            character.textContent = word.charAt(index);
+            characterContainer.appendChild(character);
+            index++;
+            setTimeout(displayNextCharacter, 100); // Change the interval (in milliseconds) here
+        }
+    }
+    
+    displayNextCharacter();
+    </script>
+    <script>
+        document.getElementById('showButton').addEventListener('click', function() {
+            document.getElementById('hiddenContent').style.display = 'block';
+        });
+
+
+        function hideButton() {
+    document.getElementById('showButton').style.display = 'none';
+}
+        </script>
+       <script>
+        document.getElementById('showButtoncons').addEventListener('click', function() {
+            document.getElementById('hiddenContentcons').style.display = 'block';
+        });
+
+        function hideButtoncons() {
+    document.getElementById('showButtoncons').style.display = 'none';
+}
+        </script>
+        <script>
+            document.getElementById('showButtonlnd').addEventListener('click', function() {
+                document.getElementById('hiddenContentlnd').style.display = 'block';
+            });
+    
+            function hideButtonlnd() {
+        document.getElementById('showButtonlnd').style.display = 'none';
+    }
+            </script>
+            <script>
+                document.getElementById('showButtonmag').addEventListener('click', function() {
+                    document.getElementById('hiddenContentmag').style.display = 'block';
+                });
+        
+                function hideButtonmag() {
+            document.getElementById('showButtonmag').style.display = 'none';
+        }
+                </script>
+                <script>
+                    document.getElementById('showButtonnutr').addEventListener('click', function() {
+                        document.getElementById('hiddenContentnutr').style.display = 'block';
+                    });
+            
+                    function hideButtonnutr() {
+                document.getElementById('showButtonnutr').style.display = 'none';
+            }
+                    </script>
+                    <script>
+                        document.getElementById('showButtoncafe').addEventListener('click', function() {
+                            document.getElementById('hiddenContentcafe').style.display = 'block';
+                        });
+                
+                        function hideButtoncafe() {
+                    document.getElementById('showButtoncafe').style.display = 'none';
+                }
+                        </script>
+                        <script>
+                            document.getElementById('showButtoncal').addEventListener('click', function() {
+                                document.getElementById('hiddenContentcal').style.display = 'block';
+                            });
+                    
+                            function hideButtoncal() {
+                        document.getElementById('showButtoncal').style.display = 'none';
+                    }
+                            </script>
+        
+            
+</body>
+<style>
+ *{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+body {
+    background-color: white;
+    color: black;
+}
+
+
+#night-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+
+}
+.night-mode {
+    background-color: black ;
+    color: white ;
+}
+
+.fa-moon {
+    margin-right: 5px;
+}
+
+
+#night-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+a{
+    color: #274eb9;
+}
+
+
+.hidden{
+    display: none;
+} 
+
+html{
+    scroll-behavior: smooth;
+   
+}
+#header{
+    width:100%;
+    /*height: 100vh;*/
+    height: auto;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.infome{
+   margin-left: 40px;
+   
+}
+.infome p{
+    color: #274eb9;
+}
+.container{
+    padding: 10px 10%;
+    font-size: 20px;   
+}
+.containerh{
+    padding: 10px 10%;
+    font-size: 20px;   
+}
+
+nav{
+display: inline;
+justify-content: space-between;
+flex-wrap: wrap;
+width: auto;
+margin-left: 120px;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+
+.header-text{
+    margin-top: 80px;
+    font-size: 30px;
+  margin-bottom: 99px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+color: #274eb9;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a5d1f5;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px; 
+}
+#about{
+    padding:80px 0;
+  height: auto;
+}
+#about h1{
+    color: #274eb9;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+   padding-left: 0px;
+   font-weight: 400;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-right: 20px;
+    padding: -15px;
+}
+
+.about-col-1 img{
+    object-fit: cover;
+    border-radius :50%;
+   width: 100%;
+ height: 70%;
+}
+.about-col-1 img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 9px 9px rgba(41, 29, 201, 0.4);
+}
+.about-col-2{
+flex-basis: 60%;
+border-radius: 15px;
+padding: -9px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    color: #274eb9;
+}
+.tab-links{
+    margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #c3f0d0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 30px;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+display: block;
+}
+/*---------------------services-----------*/
+#services{
+    padding: 30px 0;
+    margin-bottom: 100px;
+}
+#services h1{
+   color: #274eb9;
+}
+.services-lists{
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
+    grid-gap:40px;
+margin-top: 50px;
+
+ display: flex;
+     
+     justify-content: center;
+     align-items: center;
+    
+ 
+}
+.services-lists div{
+    background: #b3c3ee;
+  border-style: outset;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s,transform 0.5s;
+   
+}
+.services-lists div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-lists div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #274eb9;
+}
+.services-lists div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    
+}
+.services-lists div:hover{
+    background: #a5d1f5;
+    transform: translateY(-10px);
+}
+/*--------------qualification------------*/
+#qualification h1{
+    color: #274eb9;
+}
+
+.skills {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.skill-container {
+  margin: 20px 0;
+}
+progress {
+  width: 100%;
+  height: 20px;
+  color: #274eb9; 
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #8da7ec;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #274eb9;
+  border-radius: 2px;
+  transition: width 1s ease-in-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #274eb9;
+  border-radius: 2px;
+}
+/*--------------portfolio------------*/
+#portfolio{
+    padding: 50px 0; 
+}
+#portfolio h1{
+    color: #274eb9;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:40px;
+margin-top: 50px;
+color: white;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+width: 100%;
+border-radius: 10px;
+display: block;
+transition: transform 0.5s;
+
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#274eb9);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+margin-top: 20px;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #fff;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #131212;
+    padding: 14px 50px;
+    border-radius: 6px;
+text-decoration: none;
+color: #274eb9;
+transition: background 0.5s; 
+background: transparent;
+}
+.btn:hover{
+    background: rgb(248, 246, 246);
+    color: #91a7e4;
+}
+#showButton{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #131212;
+    padding: 14px 50px;
+    border-radius: 6px;
+text-decoration: none;
+color: #274eb9;
+transition: background 0.5s; 
+background: transparent;
+}
+#showButton:hover{
+    background: white;
+    color: #98b2f7;
+}
+
+#showButton2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #131212;
+    padding: 14px 50px;
+    border-radius: 6px;
+text-decoration: none;
+transition: background 0.5s; 
+background: transparent;
+}
+#showButton2:hover{
+    background: white;
+    color: #8ba0d8;
+}
+#showButtonbio{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #131212;
+    padding: 14px 50px;
+    border-radius: 6px;
+text-decoration: none;
+color: #274eb9;
+transition: background 0.5s; 
+background: transparent;
+
+}
+#showButtonbio:hover{
+    background: white;
+    color: #87a1eb;
+}
+
+/*--------------------contact--------------*/
+#contact h1{
+    color: #274eb9;
+}
+.contact-left{
+    
+    flex-basis: 60%;
+}
+.contact-right{
+    
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    margin-right: 30px;
+    
+    font-size: 25px;
+}
+.social-icons{
+margin-top: 30px;
+}
+.social-icons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+
+display: inline-block;
+}
+.social-icons a:hover{
+color: #aabff8;
+transform: translateY(-5px);
+}
+.btn.btn2{
+display: inline-block;
+background: transparent;
+}
+.btn.btn2:hover{
+background: white;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+} 
+form .btn2{
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+nav .fa-regular, nav .fa-solid{
+   display: none; 
+}
+
+
+/*--------css for small screens---------*/
+    @media only screen and (max-width: 1115px){
+      
+    .header-text{
+    margin-top: 100px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.header-text h1{
+    font-size: 30px;
+}
+nav .fa-regular, nav .fa-solid{
+   display: block; 
+   font-size: 25px;
+}
+nav .fa-regular, nav .fa-solid:hover{
+ color: #96ace7;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+   padding-left: 0px;
+   flex-wrap: wrap;  
+}
+ #menu{
+    margin-left: 10px;
+ } 
+ 
+nav ul{
+    background: white;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+z-index: 2;
+transition: right 0.5s;
+}
+nav ul li{
+    display:block;
+    margin: 25px;
+}
+
+nav ul .fa-regular{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+nav ul .fa-regular:hover{
+    color: #90abf5;
+}
+.sub-title{
+    font-size: 30px;
+}
+.about-col-1,.about-col-2{
+    position: relative;
+   flex-basis: 100%;
+   
+}
+.about-col-1{
+    margin-bottom: 30px;
+ margin-top: -100px;
+
+}
+.about-col-1 img{
+   
+    width: 350px;
+  height: 350px;
+    padding-left:0px ;
+    border-radius: 50%;
+}
+.about-col-2{
+    font-size: 14px;   
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-left,.contact-right{
+flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
+.services-lists{
+    flex-wrap: wrap;
+    display: flex;
+}
+.services-lists div{
+    height: 300px;
+    
+}
+#hiddenContentbio{
+    /*height: 220px;
+    width: 300px;*/
+    margin-left: 0px;
+    margin-right: 12px;
+    
+    
+   
+    font-size: medium;
+    height: auto;
+    width: auto;
+}
+#header{
+   height: auto;
+   
+}
+#about{
+    width: auto;
+}
+#services{
+    width: auto;
+}
+nav .fa-regular, nav .fa-solid{
+   display: block; 
+   font-size: 25px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-betw  een;
+   padding-left: 0px;
+   flex-wrap: wrap;
+}
+nav ul{
+    background: #829ee9;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+z-index: 2;
+transition: right 0.5s;
+}
+nav ul li{
+    display:block;
+    margin: 25px;
+}
+nav ul .fa-regular{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}}
+
+</style>
+    </html>
+
+
+
+
+
+

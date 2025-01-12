@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE-edge">
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-    <title>Thiobista</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/899c0b637d.js" crossorigin="anonymous"></script>
-   
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thiobista</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/899c0b637d.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+    </head>
+    
 <body>
         
-            <div id="header"> 
-                
-    <div class="containerh">
-       <div class="nav">
-        <nav>
-           
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#qualification">Skills&Certifications</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
-                <button id="night-mode-toggle">
-                    <i class="fas fa-moon"></i> 
-                </button>
-                <i class="fa-regular fa-circle-xmark"onclick="closemenu()"></i>
-            </ul>
-            <i id="menu" class="fa-solid fa-bars"onclick="openmenu()"></i>
-        </nav>
-    </div>
-         
-        
-     <div id="text" class="header-text">
-        <h1>Hello,I am <span><i>Thiobista</i></span><br><div id="headers"></div></h1><!--to display characters one by one-->
-       
-    </div>
-
-   
-    </div>
-   
-</div>
+    <div id="header" class="header-section">
+        <div class="containerh">
+          <!-- Navigation -->
+          <div class="nav">
+            <nav>
+              <ul id="sidemenu" class="sidemenu">
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#qualification" class="nav-link">Skills & Certifications</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                  <button id="night-mode-toggle" class="toggle-button" onclick="toggleNightMode()">
+                    <i class="fas fa-moon"></i> Night Mode
+                  </button>
+                </li>
+              </ul>
+              <i id="menu" class="fa-solid fa-bars open-menu" onclick="openmenu()"></i>
+            </nav>
+          </div>
+      
+          <!-- Header Text -->
+          <div id="text" class="header-text">
+            <h1>
+              Hello, I am <span class="name-highlight">Thiobista</i></span><br><div id="headers"></div></h1><!--to display characters one by one-->
+              <br>
+              <span id="dynamic-text" class="dynamic-text"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
 <!--about-->
 <div id="about">
     <div class="container">
@@ -52,51 +52,35 @@
                 <img src="ppl.png"alt="bi">
               </div>
              
-          <div class="about-col-2">
-            <h1 class="sub-title">Basic Detail</h1>
-       
-  <p id="text" class="pbio">
-    I have a deep-rooted interest in 
-    technology and programming. I have always been fascinated by the way websites and applications 
-    are created and also eager to learn the ins and outs of full stack development. With a solid foundation 
-    in HTML, CSS, and JavaScript, I am confident in my ability to grasp new concepts and 
-    technologies quickly. My career plans involve working as a full stack developer,
-     where I can use my skills to create innovative and user-friendly websites and applications. 
-     Ultimately, I dream of becoming a respected and sought-after developer in the industry, 
-     known for my expertise in full stack development.</p>
-
-     <div class="infome">
-        <div class="tab-titles">
-            <p class="tab-links active-link"onclick="opentab('Name')">Education </p>
-             <p class="tab-links"onclick="opentab('Address')">Address </p>
-          <p class="tab-links"onclick="opentab('birth')">Birth info</p>
-             
-            
-            </div>
-            <div class="tab-contents active-tab"id="Name">
-                <ul>
-                    <ul>- Bahirdar University</ul>
-                    <ul>- ALX Africa</ul>
-                    <ul>- FreeCodeCamp</ul>
-                </ul>
-                
-         </div>
-        <div class="tab-contents"id="Address">
-        <ul>
-        Ethiopia,Bahirdar
-        </ul>
-        </div>
-        
-        <div class="tab-contents "id="birth">
-        <ul>
-        Date- May 9 2003</br>
-        Place-Amhara region,North shewa
-        </ul>
-        </div>
-      
-        </div>
-
-        </div>  
+              <div class="about-section">
+                <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p id="text" class="pbio">
+                    Hi, I'm <span class="highlight">Thiobista Gedefaw</span>, a passionate Front-end Developer skilled in crafting innovative web and mobile applications. With expertise in <span class="highlight">Vue, React, and Go</span>, I deliver clean, maintainable, and visually appealing solutions. Driven by creativity and a love for problem-solving, I'm always eager to take on challenging projects and collaborate to create impactful digital experiences.
+                  </p>
+              
+                  <div class="infome">
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                      <p class="tab-links" onclick="opentab('Address')">Address</p>
+                    </div>
+              
+                    <div class="tab-contents active-tab" id="Education">
+                      <ul>
+                        <li>Bahir Dar University</li>
+                        <li>ALX Africa</li>
+                        <li>FreeCodeCamp</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Address">
+                      <ul>
+                        <li>Ethiopia</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> 
     </div>
 </div>
 </div>
@@ -108,20 +92,30 @@
     <div>
         <i class="fa-solid fa-code"></i>
         <h2>Web Development</h2>
-        <p> Designing and creating visually appealing and </br>user-friendly websites using HTML, CSS, and JavaScript.</p>
-       
+        <ul>
+            <li>Responsive website design and development</li>
+            <li>Front-end frameworks: React, Vue, Nuxt</li>
+            <li>Tailored solutions for unique business needs</li>
+        </ul>
+         
     </div>
      <div>
         <i class="fa-solid fa-code"></i>
-        <h2>Responsive Design</h2>
-       <p>Ensuring that websites are optimized for various devices </br>and screen sizes, providing a seamless user experience.</p>
-      
+        <h2>UI/UX Design</h2>
+        <ul>
+            <li>Designing intuitive and visually appealing interfaces</li>
+            <li> Styling with TailwindCSS and Emotion</li>
+            <li>Focus on user-centric and responsive experiences</li>
+        </ul>
     </div>
      <div>
         <i class="fa-solid fa-code"></i>
-        <h2>Front-end Frameworks</h2>
-        <p>Utilizing popular front-end frameworks such as Bootstrap, React, or</br> Angular to build scalable and efficient web applications.</p>
-       
+        <h2>Frontend Integration</h2>
+        <ul>
+            <li>Seamless API integration for dynamic and interactive applications</li>
+            <li> Ensuring smooth performance and usability</li>
+            <li>Optimized code for fast and efficient front-end delivery</li>
+        </ul>
     </div>
 
 </div>
@@ -160,11 +154,11 @@
                         <progress id="C++" value="90" max="100">90%</progress>
                       </div>
                       <div class="skill-container">
-                        <label for="Java">Java</label>
+                        <label for="Java">React</label>
                         <progress id="Java" value="70" max="100">70%</progress>
                       </div>
                       <div class="skill-container">
-                        <label for="Bootstrap">Bootstrap</label>
+                        <label for="Bootstrap">Vue</label>
                         <progress id="Bootstrap" value="70" max="100">70%</progress>
                       </div>
                       <div class="skill-container">
@@ -173,11 +167,46 @@
                       </div>
                   </section>
             </div>
-<div class="tab-contents"id="Certifications">
-  <ul><li><h3 class="cert">Freecodecamp responsive web design certificate</h3> <a href="https://www.linkedin.com/posts/thiobistagedefaw_im-happy-to-share-that-ive-obtained-a-new-activity-7118963079073157120-IcvC?utm_source=share&utm_medium=member_desktop">click to see</a></li>
-   <li> <h3>Codsoft web development internship completion certificate</h3> <a href="https://www.linkedin.com/posts/thiobistagedefaw_codsoft-cip-webdevelopment-activity-7144648548901351425-9Isv?utm_source=share&utm_medium=member_desktop">click to see</a></li>
-</ul>
-</div>
+            <div class="tab-contents" id="Certifications">
+                <ul class="certifications-list">
+                  <li class="cert-item">
+                    <h3 class="cert-title">FreeCodeCamp Responsive Web Design Certificate</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/posts/thiobistagedefaw_im-happy-to-share-that-ive-obtained-a-new-activity-7118963079073157120-IcvC?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                  <li class="cert-item">
+                    <h3 class="cert-title">CodSoft Web Development Internship Completion Certificate</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/posts/thiobistagedefaw_codsoft-cip-webdevelopment-activity-7144648548901351425-9Isv?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                  <li class="cert-item">
+                    <h3 class="cert-title">Android Developer Fundamentals</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/in/thiobistagedefaw/details/certifications/" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                  <li class="cert-item">
+                    <h3 class="cert-title">Full Stack & Mobile Application Developer</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/in/thiobistagedefaw/details/certifications/" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                  <li class="cert-item">
+                    <h3 class="cert-title">Entrepreneur</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/in/thiobistagedefaw/details/certifications/" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                  <li class="cert-item">
+                    <h3 class="cert-title">Peace Ambassador</h3>
+                    <button class="cert-button">
+                      <a href="https://www.linkedin.com/in/thiobistagedefaw/details/certifications/ " target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </button>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
     </div>
@@ -189,6 +218,45 @@
         <h1 class="sub-title">My Work</h1>
         
         <div class="work-list">
+            <div class="work">
+                <img src="food.jpg">
+                <div class="layer">
+                    <h3>Food Recipe Site</h3>
+                   
+                    <button id="showButtonfood" onclick="hideButtonfood()">Click here to see description</button>
+                    <div id="hiddenContentfood" class="hidden">
+                        <p>Developed a platform for browsing, sharing, and managing recipes with features like filtering, ratings, and comments. Built using Golang, Vue 3, Nuxt 3, TailwindCSS, Hasura, and Postgres.</p>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="song.jpg">
+                <div class="layer">
+                    <h3>Song Management Website</h3>
+                   
+                    <button id="showButtonsong" onclick="hideButtonsong()">Click here to see description</button>
+                    <div id="hiddenContentsong" class="hidden">
+                        <p>Developed a ReactJS app to manage songs with create, update, and delete features. Used Redux Toolkit, Redux-Saga, and Emotion for state management, API calls, and styling.
+                           <button> <a href="https://songmanagement.vercel.app/" target="_blank" rel="noopener noreferrer">Go to Site</a></button>
+                        </p>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="rick&morty.jpg">
+                <div class="layer">
+                    <h3>Movie Website</h3>
+                   
+                    <button id="showButtonmovie" onclick="hideButtonmovie()">Click here to see description</button>
+                    <div id="hiddenContentmovie" class="hidden">
+                        <p>Created a web app to explore Rick and Morty characters, episodes, and locations. Built using nue3 with API integration for dynamic data fetching and display.</p>
+                        <button> <a href="https://rich-and-morty-project-dibp.vercel.app/" target="_blank" rel="noopener noreferrer">Go to Site</a></button>
+                        </div>
+                </div>
+                
+            </div>
             <div class="work">
                 <img src="cons.jpg">
                 <div class="layer">
@@ -287,12 +355,13 @@
                 <p><i id="op" class="fa-solid fa-envelope"></i>thiobista0gedefaw@gmail.com</p>
                 <p><i id="op" class="fa-solid fa-phone"></i>+251960272771</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100094136316243&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    
                     <a href="https://t.me/Thiobsta"><i class="fa-brands fa-telegram"></i></a>
                     <a href="https://www.linkedin.com/in/thiobistagedefaw/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://instagram.com/thiobista?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="https://1drv.ms/b/s!AitkmNXfT1rqgU-yqng_t3jwvp1i"download="res.pdf" class="btn btn2" >Download Cv</a>
+                
+                    <a href="https://www.facebook.com/profile.php?id=100094136316243&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></div>
+                <a href="https://1drv.ms/b/c/3388c663cda2a49d/EZagzGsyYt1FkYXxn7CDb9QBD6C24TlUGndmHFV-hA7ZLA?e=DIwYjp"download="cv.pdf" class="btn btn2" target="_blank" rel="noopener noreferrer" >Download Resume</a>
             </div>
             <div class="contact-right">
                 <form action="">
@@ -309,782 +378,13 @@
    </div>
 </div>
 <script>
-    const nightModeToggle = document.getElementById('night-mode-toggle');
-const body = document.body;
-
-nightModeToggle.addEventListener('click', () => {
-    body.classList.toggle('night-mode');
-    
-    const isNightMode = body.classList.contains('night-mode');
-    
-    if (isNightMode) {
-        nightModeToggle.innerHTML = '<i class="fas fa-sun"></i> ';
-    } else {
-        nightModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    }
-});
-
-</script>
-<script>
-    document.getElementById('showButtonbio').addEventListener('click', function() {
-        document.getElementById('hiddenContentbio').style.display = 'block';
-    });
-
-    function hideButtonbio() {
-document.getElementById('showButtonbio').style.display = 'none';
-}
-    </script>
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-     var tabcontents=document.getElementsByClassName("tab-contents");
-     function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-     }
-</script>
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0"
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px"
-    }
-</script>
-<script>
-    const word = 'Software Engineering Student';
-    const characterContainer = document.getElementById('headers');
-    let index = 0;
-    
-    function displayNextCharacter() {
-        if (index < word.length) {
-            const character = document.createElement('span');
-            character.textContent = word.charAt(index);
-            characterContainer.appendChild(character);
-            index++;
-            setTimeout(displayNextCharacter, 100); // Change the interval (in milliseconds) here
-        }
-    }
-    
-    displayNextCharacter();
-    </script>
-    <script>
-        document.getElementById('showButton').addEventListener('click', function() {
-            document.getElementById('hiddenContent').style.display = 'block';
-        });
-
-
-        function hideButton() {
-    document.getElementById('showButton').style.display = 'none';
-}
-        </script>
-       <script>
-        document.getElementById('showButtoncons').addEventListener('click', function() {
-            document.getElementById('hiddenContentcons').style.display = 'block';
-        });
-
-        function hideButtoncons() {
-    document.getElementById('showButtoncons').style.display = 'none';
-}
-        </script>
-        <script>
-            document.getElementById('showButtonlnd').addEventListener('click', function() {
-                document.getElementById('hiddenContentlnd').style.display = 'block';
-            });
-    
-            function hideButtonlnd() {
-        document.getElementById('showButtonlnd').style.display = 'none';
-    }
-            </script>
-            <script>
-                document.getElementById('showButtonmag').addEventListener('click', function() {
-                    document.getElementById('hiddenContentmag').style.display = 'block';
-                });
-        
-                function hideButtonmag() {
-            document.getElementById('showButtonmag').style.display = 'none';
-        }
-                </script>
-                <script>
-                    document.getElementById('showButtonnutr').addEventListener('click', function() {
-                        document.getElementById('hiddenContentnutr').style.display = 'block';
-                    });
-            
-                    function hideButtonnutr() {
-                document.getElementById('showButtonnutr').style.display = 'none';
-            }
-                    </script>
-                    <script>
-                        document.getElementById('showButtoncafe').addEventListener('click', function() {
-                            document.getElementById('hiddenContentcafe').style.display = 'block';
-                        });
-                
-                        function hideButtoncafe() {
-                    document.getElementById('showButtoncafe').style.display = 'none';
-                }
-                        </script>
-                        <script>
-                            document.getElementById('showButtoncal').addEventListener('click', function() {
-                                document.getElementById('hiddenContentcal').style.display = 'block';
-                            });
-                    
-                            function hideButtoncal() {
-                        document.getElementById('showButtoncal').style.display = 'none';
-                    }
-                            </script>
+ 
+  </script>
+  
         
             
 </body>
-<style>
- *{
-    margin: 0;
-    padding: 0;
-    font-family:'poppins',sans-serif;
-    box-sizing:border-box;
-}
-body {
-    background-color: white;
-    color: black;
-}
-
-
-#night-mode-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-
-}
-.night-mode {
-    background-color: black ;
-    color: white ;
-}
-
-.fa-moon {
-    margin-right: 5px;
-}
-
-
-#night-mode-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-}
-a{
-    color: #274eb9;
-}
-
-
-.hidden{
-    display: none;
-} 
-
-html{
-    scroll-behavior: smooth;
-   
-}
-#header{
-    width:100%;
-    /*height: 100vh;*/
-    height: auto;
-    background-size: cover;
-    background-position: center;
-
-
-}
-.infome{
-   margin-left: 40px;
-   
-}
-.infome p{
-    color: #274eb9;
-}
-.container{
-    padding: 10px 10%;
-    font-size: 20px;   
-}
-.containerh{
-    padding: 10px 10%;
-    font-size: 20px;   
-}
-
-nav{
-display: inline;
-justify-content: space-between;
-flex-wrap: wrap;
-width: auto;
-margin-left: 120px;
-}
-
-nav ul li{
-    display:inline-block;
-    list-style: none;
-    margin: 10px 20px;
     
-}
-
-
-.header-text{
-    margin-top: 80px;
-    font-size: 30px;
-  margin-bottom: 99px;
-}
-
-nav ul li a {
-  position: relative;
-  text-decoration: none;
-color: #274eb9;
-}
-
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #a5d1f5;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-nav ul li a:hover::after {
-  transform: scaleX(1);
-}
-
-.header-text h1{
-  font-size: 60px;
-  margin-top: 20px; 
-}
-#about{
-    padding:80px 0;
-  height: auto;
-}
-#about h1{
-    color: #274eb9;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-   padding-left: 0px;
-   font-weight: 400;
-}
-.about-col-1{
-    flex-basis: 35%;
-    margin-right: 20px;
-    padding: -15px;
-}
-
-.about-col-1 img{
-    object-fit: cover;
-    border-radius :50%;
-   width: 100%;
- height: 70%;
-}
-.about-col-1 img:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 9px 9px rgba(41, 29, 201, 0.4);
-}
-.about-col-2{
-flex-basis: 60%;
-border-radius: 15px;
-padding: -9px;
-}
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-    color: #274eb9;
-}
-.tab-links{
-    margin-right: 50px;
-     font-size: 18px;
-     font-weight: 500;
-     cursor: pointer;
-     position: relative;
-}
-.tab-links::after{
-    content:'';
-    width: 0;
-    height: 3px;
-    background: #c3f0d0;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-
-}
-.tab-links.active-link::after{
-    width: 30px;
-
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-    
-    font-size: 14px;
-}
-
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-display: block;
-}
-/*---------------------services-----------*/
-#services{
-    padding: 30px 0;
-    margin-bottom: 100px;
-}
-#services h1{
-   color: #274eb9;
-}
-.services-lists{
-    display: inline-block;
-    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
-    grid-gap:40px;
-margin-top: 50px;
-
- display: flex;
-     
-     justify-content: center;
-     align-items: center;
-    
- 
-}
-.services-lists div{
-    background: #b3c3ee;
-  border-style: outset;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s,transform 0.5s;
-   
-}
-.services-lists div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-lists div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #274eb9;
-}
-.services-lists div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    
-}
-.services-lists div:hover{
-    background: #a5d1f5;
-    transform: translateY(-10px);
-}
-/*--------------qualification------------*/
-#qualification h1{
-    color: #274eb9;
-}
-
-.skills {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
-.skill-container {
-  margin: 20px 0;
-}
-progress {
-  width: 100%;
-  height: 20px;
-  color: #274eb9; 
-}
-progress[value]::-webkit-progress-bar {
-  background-color: #8da7ec;
-  border-radius: 2px;
-}
-
-progress[value]::-webkit-progress-value {
-  background-color: #274eb9;
-  border-radius: 2px;
-  transition: width 1s ease-in-out;
-}
-
-progress[value]::-moz-progress-bar {
-  background-color: #274eb9;
-  border-radius: 2px;
-}
-/*--------------portfolio------------*/
-#portfolio{
-    padding: 50px 0; 
-}
-#portfolio h1{
-    color: #274eb9;
-}
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap:40px;
-margin-top: 50px;
-color: white;
-
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work img{
-width: 100%;
-border-radius: 10px;
-display: block;
-transition: transform 0.5s;
-
-}
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#274eb9);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5;
-}
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a{
-margin-top: 20px;
-text-decoration: none;
-font-size: 18px;
-line-height: 60px;
-background: #fff;
-width: 60px;
-height: 60px;
-border-radius: 50%;
-text-align: center;
-}
-.work:hover img{
-transform: scale(1.1);
-}
-.work:hover .layer{
-height: 100%;
-}
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
-}
-.btn:hover{
-    background: rgb(248, 246, 246);
-    color: #91a7e4;
-}
-#showButton{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
-}
-#showButton:hover{
-    background: white;
-    color: #98b2f7;
-}
-
-#showButton2{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-transition: background 0.5s; 
-background: transparent;
-}
-#showButton2:hover{
-    background: white;
-    color: #8ba0d8;
-}
-#showButtonbio{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
-
-}
-#showButtonbio:hover{
-    background: white;
-    color: #87a1eb;
-}
-
-/*--------------------contact--------------*/
-#contact h1{
-    color: #274eb9;
-}
-.contact-left{
-    
-    flex-basis: 60%;
-}
-.contact-right{
-    
-    flex-basis: 35%;
-}
-.contact-left p{
-    margin-top: 30px;
-
-}
-.contact-left p i{
-    margin-right: 30px;
-    
-    font-size: 25px;
-}
-.social-icons{
-margin-top: 30px;
-}
-.social-icons a{
-text-decoration: none;
-font-size: 30px;
-margin-right: 15px;
-
-display: inline-block;
-}
-.social-icons a:hover{
-color: #aabff8;
-transform: translateY(-5px);
-}
-.btn.btn2{
-display: inline-block;
-background: transparent;
-}
-.btn.btn2:hover{
-background: white;
-}
-.contact-right form{
-    width: 100%;
-}
-form input,form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 18px;
-} 
-form .btn2{
-    padding: 14px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-
-nav .fa-regular, nav .fa-solid{
-   display: none; 
-}
-
-
-/*--------css for small screens---------*/
-    @media only screen and (max-width: 1115px){
-      
-    .header-text{
-    margin-top: 100px;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.header-text h1{
-    font-size: 30px;
-}
-nav .fa-regular, nav .fa-solid{
-   display: block; 
-   font-size: 25px;
-}
-nav .fa-regular, nav .fa-solid:hover{
- color: #96ace7;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-   padding-left: 0px;
-   flex-wrap: wrap;  
-}
- #menu{
-    margin-left: 10px;
- } 
- 
-nav ul{
-    background: white;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-z-index: 2;
-transition: right 0.5s;
-}
-nav ul li{
-    display:block;
-    margin: 25px;
-}
-
-nav ul .fa-regular{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
-nav ul .fa-regular:hover{
-    color: #90abf5;
-}
-.sub-title{
-    font-size: 30px;
-}
-.about-col-1,.about-col-2{
-    position: relative;
-   flex-basis: 100%;
-   
-}
-.about-col-1{
-    margin-bottom: 30px;
- margin-top: -100px;
-
-}
-.about-col-1 img{
-   
-    width: 350px;
-  height: 350px;
-    padding-left:0px ;
-    border-radius: 50%;
-}
-.about-col-2{
-    font-size: 14px;   
-}
-.tab-links{
-    font-size: 16px;
-    margin-right: 20px;
-}
-.contact-left,.contact-right{
-flex-basis: 100%;
-}
-.copyright{
-    font-size: 14px;
-}
-.services-lists{
-    flex-wrap: wrap;
-    display: flex;
-}
-.services-lists div{
-    height: 300px;
-    
-}
-#hiddenContentbio{
-    /*height: 220px;
-    width: 300px;*/
-    margin-left: 0px;
-    margin-right: 12px;
-    
-    
-   
-    font-size: medium;
-    height: auto;
-    width: auto;
-}
-#header{
-   height: auto;
-   
-}
-#about{
-    width: auto;
-}
-#services{
-    width: auto;
-}
-nav .fa-regular, nav .fa-solid{
-   display: block; 
-   font-size: 25px;
-
-}
-.row{
-    display: flex;
-    justify-content: space-betw  een;
-   padding-left: 0px;
-   flex-wrap: wrap;
-}
-nav ul{
-    background: #829ee9;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-z-index: 2;
-transition: right 0.5s;
-}
-nav ul li{
-    display:block;
-    margin: 25px;
-}
-nav ul .fa-regular{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}}
-
-</style>
     </html>
 
 

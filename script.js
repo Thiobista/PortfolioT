@@ -16,13 +16,31 @@
   }
 
   // Menu Functionality
-  function openmenu() {
-    document.getElementById('sidemenu').classList.add('open');
-  }
+ // Open Menu
+function openmenu() {
+  document.getElementById('sidemenu').classList.add('open');
+  document.getElementById('menu').style.display = 'none'; // Hide the menu button
+}
 
-  function closemenu() {
-    document.getElementById('sidemenu').classList.remove('open');
+// Close Menu
+function closemenu() {
+  document.getElementById('sidemenu').classList.remove('open');
+  document.getElementById('menu').style.display = 'block'; // Show the menu button
+}
+
+// Close menu if the click is outside the menu
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('sidemenu');
+  const menuButton = document.getElementById('menu');
+  
+  // Check if the clicked element is not the menu or its button
+  if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+    if (menu.classList.contains('open')) {
+      closemenu();
+    }
   }
+});
+
 
   // Night Mode Toggle
   const nightModeToggle = document.getElementById('night-mode-toggle');

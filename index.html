@@ -15,24 +15,35 @@
     <div id="header" class="header-section">
         <div class="containerh">
           <!-- Navigation -->
-          <div class="nav">
-            <nav>
-              <ul id="sidemenu" class="sidemenu">
-                <li><a href="#header" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#qualification" class="nav-link">Skills & Certifications</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li>
-                  <button id="night-mode-toggle" class="toggle-button" onclick="toggleNightMode()">
-                    <i class="fas fa-moon"></i> Night Mode
-                  </button>
-                </li>
-              </ul>
-              <i id="menu" class="fa-solid fa-bars open-menu" onclick="openmenu()"></i>
-            </nav>
-          </div>
+        <!-- Navigation -->
+<div class="nav">
+  <nav>
+    <!-- Open Menu Button -->
+    <i id="menu" class="fa-solid fa-bars open-menu" onclick="openmenu()"></i>
+
+    <!-- Side Menu -->
+    <ul id="sidemenu" class="sidemenu">
+      <!-- Close Menu Button -->
+      <button class="close-menu" onclick="closemenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <!-- Menu Links -->
+      <li><a href="#header" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#qualification" class="nav-link">Qualifications</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- Night Mode Button -->
+      <li>
+        <button id="night-mode-toggle" class="toggle-button" onclick="toggleNightMode()">
+          <i class="fas fa-moon"></i> Night Mode
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
       
           <!-- Header Text -->
           <div id="text" class="header-text">
@@ -128,7 +139,7 @@
         <div class="row">
            
           <div class="about-col-2">
-            <h1 class="sub-title">Skills&Certifications</h1>
+            <h1 class="sub-title">Qualifications</h1>
             
                <div class="tab-titles">
                <p class="tab-links active-link"onclick="opentab('Skills')">Skills </p>

@@ -99,3 +99,29 @@ document.addEventListener('click', function(event) {
       });
     }
   });
+  document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    // Debugging: Log the form data
+    for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
+
+    try {
+        const response = await fetch("http://localhost:8080/send-email", {
+            method: "POST",
+            body: formData,
+        });
+
+        if (response.ok) {
+            alert("Email sent successfully!");
+        } else {
+            alert("Failed to send email.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred while sending the email.");
+    }
+});

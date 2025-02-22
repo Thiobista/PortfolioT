@@ -200,56 +200,53 @@ padding: -9px;
 display: block;
 }
 /*---------------------services-----------*/
-#services{
-    padding: 30px 0;
-    margin-bottom: 100px;
+#services {
+  padding: 30px 0;
+  margin-bottom: 100px;
 }
-#services h1{
-   color: #274eb9;
+#services h1 {
+  color: #274eb9;
 }
-.services-lists{
-    display: inline-block;
-    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
-    grid-gap:40px;
-margin-top: 50px;
-
- display: flex;
-     
-     justify-content: center;
-     align-items: center;
-    
- 
+.services-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
-.services-lists div{
-    background: #b3c3ee;
+.services-lists div {
+  background: #b3c3ee;
   border-style: outset;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s,transform 0.5s;
-   
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
-.services-lists div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+.services-lists div i {
+  font-size: 50px;
+  margin-bottom: 30px;
 }
-.services-lists div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #274eb9;
+.services-lists div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #274eb9;
 }
-.services-lists div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    
+.services-lists div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
 }
-.services-lists div:hover{
-    background: #a5d1f5;
-    transform: translateY(-10px);
+.services-lists div:hover {
+  background: #a5d1f5;
+  transform: translateY(-10px);
 }
 /*--------------qualification------------*/
 #qualification h1{
@@ -286,137 +283,148 @@ progress[value]::-moz-progress-bar {
   border-radius: 2px;
 }
 /*--------------portfolio------------*/
-#portfolio{
-    padding: 50px 0; 
+#portfolio {
+  padding: 50px 0; 
+  background-color: #f9f9f9;
 }
-#portfolio h1{
-    color: #274eb9;
+#portfolio h1 {
+  color: #274eb9;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap:40px;
-margin-top: 50px;
-color: white;
-
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  color: white;
 }
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.work img{
-width: 100%;
-border-radius: 10px;
-display: block;
-transition: transform 0.5s;
-
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#274eb9);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5;
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #274eb9);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
 }
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-.layer a{
-margin-top: 20px;
-text-decoration: none;
-font-size: 18px;
-line-height: 60px;
-background: #fff;
-width: 60px;
-height: 60px;
-border-radius: 50%;
-text-align: center;
+.layer a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: #274eb9;
+  transition: background 0.3s, color 0.3s;
 }
-.work:hover img{
-transform: scale(1.1);
+.layer a:hover {
+  background: #274eb9;
+  color: #fff;
 }
-.work:hover .layer{
-height: 100%;
+.work:hover img {
+  transform: scale(1.1);
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
+.work:hover .layer {
+  height: 100%;
 }
-.btn:hover{
-    background: rgb(248, 246, 246);
-    color: #91a7e4;
+.work:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-#showButton{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #131212;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #274eb9;
+  transition: background 0.5s, color 0.5s; 
+  background: transparent;
 }
-#showButton:hover{
-    background: white;
-    color: #98b2f7;
+.btn:hover {
+  background: rgb(248, 246, 246);
+  color: #91a7e4;
 }
-
-#showButton2{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-transition: background 0.5s; 
-background: transparent;
+#showButton {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #131212;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #274eb9;
+  transition: background 0.5s, color 0.5s; 
+  background: transparent;
 }
-#showButton2:hover{
-    background: white;
-    color: #8ba0d8;
+#showButton:hover {
+  background: white;
+  color: #98b2f7;
 }
-#showButtonbio{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #131212;
-    padding: 14px 50px;
-    border-radius: 6px;
-text-decoration: none;
-color: #274eb9;
-transition: background 0.5s; 
-background: transparent;
-
+#showButton2 {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #131212;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.5s, color 0.5s; 
+  background: transparent;
 }
-#showButtonbio:hover{
-    background: white;
-    color: #87a1eb;
+#showButton2:hover {
+  background: white;
+  color: #8ba0d8;
 }
-
+#showButtonbio {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #131212;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #274eb9;
+  transition: background 0.5s, color 0.5s; 
+  background: transparent;
+}
+#showButtonbio:hover {
+  background: white;
+  color: #87a1eb;
+}
 /*--------------------contact--------------*/
 #contact h1{
     color: #274eb9;
@@ -1034,4 +1042,16 @@ nav ul .fa-regular{
   .sidemenu {
     display: flex; /* Always show the menu on large screens */
   }
+}
+/* Apply a white caret (text cursor) when input or textarea is focused */
+input:focus, textarea:focus {
+  outline: none; /* Remove the default outline */
+  border: 2px solid #007bff; /* Optional: Add a blue border for focus */
+  caret-color: white; /* Make the cursor white */
+}
+
+/* Styling the input fields and textareas */
+input, textarea {
+  cursor: text; /* Default text cursor */
+  caret-color: white; /* Set the caret color to white by default */
 }

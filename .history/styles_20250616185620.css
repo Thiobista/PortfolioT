@@ -7,18 +7,12 @@
 }
 
 :root {
-    --primary-color: #1a56db;
-    --secondary-color: #2563eb;
-    --accent-color: #3b82f6;
-    --text-color: #111827;
-    --text-light: #4b5563;
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --text-color: #1f2937;
     --bg-color: #ffffff;
-    --card-bg: #f8fafc;
-    --hover-bg: #e5e7eb;
-    --border-color: #e2e8f0;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --button-text: #ffffff;
-    --header-text: #111827;
+    --card-bg: #f3f4f6;
     --transition: all 0.3s ease;
 }
 
@@ -41,14 +35,8 @@ body {
     --secondary-color: #3b82f6;
     --accent-color: #2563eb;
     --text-color: #f3f4f6;
-    --text-light: #d1d5db;
     --bg-color: #111827;
     --card-bg: #1f2937;
-    --hover-bg: #374151;
-    --border-color: #374151;
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --button-text: #ffffff;
-    --header-text: #f3f4f6;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -234,12 +222,13 @@ display: block;
   align-items: center;
 }
 .services-lists div {
-  background: var(--bg-color);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px var(--shadow-color);
-  transition: var(--transition);
-  border: 1px solid var(--border-color);
+  background: #b3c3ee;
+  border-style: outset;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  transition: background 0.5s, transform 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,13 +239,10 @@ display: block;
   margin-bottom: 30px;
 }
 .services-lists div h2 {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-.services-lists div ul li {
-  color: var(--text-light);
-  margin: 0.5rem 0;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #274eb9;
 }
 .services-lists div a {
   text-decoration: none;
@@ -265,9 +251,8 @@ display: block;
   margin-top: 20px;
 }
 .services-lists div:hover {
+  background: #a5d1f5;
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px var(--shadow-color);
-  border-color: var(--primary-color);
 }
 /*--------------qualification------------*/
 #qualification h1{
@@ -335,48 +320,49 @@ progress[value]::-moz-progress-bar {
   transition: transform 0.5s;
 }
 .layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), var(--primary-color));
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #274eb9);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  opacity: 0;
-  transition: var(--transition);
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
 }
 .layer h3 {
-  color: var(--bg-color);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
-.layer p {
-  color: var(--bg-color);
+.layer a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   text-align: center;
-  margin-bottom: 1rem;
+  color: #274eb9;
+  transition: background 0.3s, color 0.3s;
 }
-.layer button {
-  background: var(--bg-color);
-  color: var(--primary-color);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: var(--transition);
-}
-.layer button:hover {
-  background: var(--hover-bg);
-  transform: translateY(-2px);
+.layer a:hover {
+  background: #274eb9;
+  color: #fff;
 }
 .work:hover img {
   transform: scale(1.1);
 }
 .work:hover .layer {
-  opacity: 1;
+  height: 100%;
 }
 .work:hover {
   transform: translateY(-10px);
@@ -744,7 +730,7 @@ nav ul .fa-regular{
 
   .nav-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: #fff;
     font-size: 1rem;
     font-weight: bold;
     padding: 8px 15px;
@@ -1138,20 +1124,17 @@ input, textarea {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    color: var(--header-text);
 }
 
 .name-highlight {
     color: var(--primary-color);
     position: relative;
-    font-weight: 800;
 }
 
 .dynamic-text {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-top: 1rem;
-    font-weight: 500;
 }
 
 /* About Section */
@@ -1168,7 +1151,7 @@ input, textarea {
 
 .about-col-1 img {
     border-radius: 20px;
-    box-shadow: 0 10px 30px var(--shadow-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
 
@@ -1179,11 +1162,6 @@ input, textarea {
 
 .about-col-2 {
     flex: 1;
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px var(--shadow-color);
-    border: 1px solid var(--border-color);
 }
 
 .sub-title {
@@ -1221,15 +1199,13 @@ input, textarea {
     background: var(--bg-color);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 15px var(--shadow-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
-    border: 1px solid var(--border-color);
 }
 
 .services-lists div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--shadow-color);
-    border-color: var(--primary-color);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .services-lists div i {
@@ -1242,13 +1218,6 @@ input, textarea {
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 1rem;
-}
-
-.services-lists div ul li {
-    color: var(--text-color);
-    margin: 0.75rem 0;
-    font-size: 1.1rem;
-    font-weight: 400;
 }
 
 /* Portfolio Section */
@@ -1284,7 +1253,7 @@ input, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--primary-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--primary-color));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1329,24 +1298,20 @@ input, textarea {
     color: var(--text-color);
     font-size: 1.5rem;
     transition: var(--transition);
-    padding: 0.5rem;
-    border-radius: 50%;
-    background: var(--card-bg);
 }
 
 .social-icons a:hover {
     color: var(--primary-color);
     transform: translateY(-5px);
-    background: var(--hover-bg);
 }
 
 form input, form textarea {
     width: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--card-bg);
     border-radius: 8px;
-    background: var(--card-bg);
+    background: var(--bg-color);
     color: var(--text-color);
     transition: var(--transition);
 }
@@ -1354,36 +1319,23 @@ form input, form textarea {
 form input:focus, form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
     background: var(--primary-color);
-    color: var(--button-text);
+    color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: var(--transition);
-    font-weight: 500;
 }
 
 .btn:hover {
     background: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-color);
-}
-
-.btn2 {
-    background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.btn2:hover {
-    background: var(--primary-color);
-    color: var(--button-text);
 }
 
 /* Responsive Design */
@@ -1423,8 +1375,8 @@ form input:focus, form textarea:focus {
 
 /* Night Mode Toggle */
 .toggle-button {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background: none;
+    border: none;
     color: var(--text-color);
     cursor: pointer;
     display: flex;
@@ -1436,8 +1388,7 @@ form input:focus, form textarea:focus {
 }
 
 .toggle-button:hover {
-    background: var(--hover-bg);
-    border-color: var(--primary-color);
+    background: var(--card-bg);
 }
 
 /* Animations */

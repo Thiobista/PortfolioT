@@ -57,7 +57,7 @@ document.addEventListener('click', function(event) {
   }
 
   // Word Typing Animation
-  const word = 'Front-end Developer';
+  const word = 'Full Stack Developer';
   const characterContainer = document.getElementById('headers');
   let index = 0;
 
